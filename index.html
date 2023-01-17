@@ -15,8 +15,24 @@
   <main class="main-content">
     <div class="page container">
       <h1 class="page-title">Our Pricing</h1>
-      <div style="margin-bottom:64px ;">switch</div>
+      <form class="pricing-switch" action="https://echo.htmlacademy.ru" method="get">
+        <!-- switch  -->
+        <div class="switch">
+          <!-- switch radio  -->
+          <input class="switch-input-annually visually-hidden" type="radio" name="payment_period" value="Annually" id="annually-payment-radio">
+          <input class="switch-input-monthly visually-hidden" type="radio" name="payment_period" value="Monthly" id="monthly-payment-radio">
 
+          <label class="switch-label" for="annually-payment-radio">annually</label>
+          <!-- switch control  -->
+          <div class="switch-control">
+            <div class="switch-sircle"></div>
+            <label class="switch-control-annually" for="annually-payment-radio"></label>
+            <label class="switch-control-monthly" for="monthly-payment-radio"></label>
+          </div>
+
+          <label class="switch-label" for="monthly-payment-radio">monthly</label>
+        </div>
+      </form>
       <section class="pricing">
         <h2 class="visually-hidden">pricing</h2>
         <div class="pricing-inner">

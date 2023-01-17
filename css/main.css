@@ -133,6 +133,66 @@ img {
   font-size: 32px;
 }
 
+.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-switch {
+  margin-bottom: 64px;
+}
+
+.switch-label {
+  font-size: 15px;
+  line-height: 28px;
+  color:rgba(110, 114, 142, 0.5) ;
+  cursor: pointer;
+}
+
+.switch-label:hover {
+  color: #6e728e;
+}
+
+.switch-control {
+  position: relative;
+  width: 56px;
+  height: 32px;
+  padding: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius:16px;
+  background-color: #696EDD;
+  background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+}
+
+.switch-sircle {
+  width: 24px;
+  height: 24px;
+  border-radius:50%;
+  background-color: #fff;
+  transition: margin 0.2s ease;
+}
+
+.switch-control-annually,
+.switch-control-monthly {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.switch-input-annually:checked ~ .switch-control .switch-control-monthly,
+.switch-input-monthly:checked ~ .switch-control .switch-control-annually {
+  z-index: 5;
+}
+
+.switch-input-monthly:checked ~ .switch-control .switch-sircle {
+  margin-left: 24px;
+}
+
 .pricing {
   width: 100%;
 }
